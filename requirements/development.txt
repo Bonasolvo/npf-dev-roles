@@ -1,0 +1,14 @@
+# Python 3 MySQL backend
+pymysql
+
+# Python interface to Graphviz's dot (Python 3)
+# http://www.graphviz.org/Download.php
+pyparsing==2.0.3
+# pydot
+https://github.com/nlhepler/pydot/archive/master.zip
+
+# Grappeli admin UI
+django-grappelli
+
+werkzeug
+watchdog

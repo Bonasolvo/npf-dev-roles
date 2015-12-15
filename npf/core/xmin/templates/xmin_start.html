@@ -1,0 +1,24 @@
+{% extends "xmin_base.html" %}
+{% load staticfiles %}
+
+{% block title %} Testbed {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="//cdn.sencha.com/ext/gpl/4.2.1/resources/css/ext-all-gray.css">
+    <link rel="stylesheet" type="text/css" href="{% static "xmin/styles/xmin.css" %}">
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <!--<script src="http://cdn.sencha.com/ext/gpl/4.2.1/ext-all.js"></script>-->
+    <script src="//cdn.sencha.com/ext/gpl/4.2.1/ext-all-debug.js"></script>
+    <script>
+        Ext.namespace('Xmin.settings');
+        Xmin.settings = {{ settings|safe }};
+    </script>
+
+    <script type="text/javascript" src="{% static "xmin/locale/ru-RU.js" %}"></script>
+    <script type="text/javascript" src="{% static "xmin/app.js" %}"></script>
+{% endblock %}

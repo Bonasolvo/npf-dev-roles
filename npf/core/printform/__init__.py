@@ -1,0 +1,1 @@
+default_app_config = 'npf.core.printform.apps.DocsGenConfig'

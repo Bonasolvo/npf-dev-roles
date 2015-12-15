@@ -1,0 +1,211 @@
+.xmin-boundlist-header {
+    font-weight: bold;
+}
+
+.xmin-boundlist-disabled {
+    font-style: italic;
+}
+
+.xmin-boundlist-disabled:hover {
+    cursor: default;
+    border: 1px dotted white !important;
+    background: none !important;
+}
+
+.xmin-modellist {
+    background-color: #f9f9f9;
+}
+
+ul.xmin-modellist-buttons  {
+    list-style: none outside none;
+}
+
+ul.xmin-modellist-buttons li {
+    float: left;
+
+}
+
+ul.xmin-modellist-buttons li a {
+    background-image: url(../images/icons/documents_64x64.png);
+    background-color: #f3f3f3;
+    border-color: #dcdfe3 #d0d4d8 #d0d4d8 #dcdfe3;
+    border-style: solid;
+    border-width: 1px;
+    color: #666;
+    background-position: 50% 5px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 116px;
+    padding: 75px 5px 0;
+    text-align: center;
+    width: 100px;
+    outline: medium none;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: #bbb 0px 0px 3px;
+    font-size: 85%;
+    margin: 7px;
+}
+
+ul.xmin-modellist-buttons li.xmin-modellist-button-hover a ,ul.xmin-modellist-buttons li a:hover
+{
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    color: #444;
+    text-shadow: #ddd 0px 0px 3px;
+}
+
+.xmin-modellist-buttons a.user {
+    background-image: url(../images/icons/user_64x64.png);
+}
+
+.xmin-modellist-buttons a.group {
+    background-image: url(../images/icons/group_64x64.png);
+}
+
+.xmin-modellist-buttons a.site {
+    background-image: url(../images/icons/bookmark_64x64.png);
+}
+
+.xmin-modellist-context-menu-title {
+    font-weight: bold;
+}
+
+.xmin-modellist-context-menu-item-default-icon {
+    background-image: url(../images/icons/documents_16x16.png);
+}
+
+.xmin-modellist-context-menu-item-add-new-icon {
+    background-image: url(../images/icons/button_add_16x16.png);
+}
+
+.xmin-modellist-context-menu-item-list-all-icon {
+    background-image: url(../images/icons/database_16x16.png);
+}
+
+
+/* xmin-recent-actions - Dashboard Recent Actions view */
+
+.xmin-recent-actions {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+
+.xmin-recent-actions .xmin-recent-actions-list {
+    font-size: 11px;
+    list-style: none outside none;
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action {
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #FFFFFF;
+    color: #444;
+    clear: both;
+    float: left;
+    padding: 5px 10px;
+    /*position: relative;*/
+    -moz-box-sizing: border-box;
+    /*height: 40px;*/
+    width: 100%;
+    overflow: hidden;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.DELETION {
+    background-image: url(../images/icons/rubbish_16x16.png);
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.ADDITION {
+    background-image: url(../images/icons/plus_16x16.png);
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.CHANGE {
+    background-image: url(../images/icons/pencil_16x16.png);
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.user {
+    background-image: url(../images/icons/user_16x16.png);
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.group {
+    background-image: url(../images/icons/group_16x16.png);
+}
+
+.xmin-recent-actions .xmin-recent-actions-list .action.site {
+    background-image: url(../images/icons/bookmark_16x16.png);
+}
+
+.xmin-recent-actions .action .object_name {
+    font-weight: bold;
+}
+
+.xmin-recent-actions .action a, .xmin-recent-actions .action a:visited {
+    color: #448;
+    text-decoration: none;
+}
+
+.xmin-recent-actions .action a:hover {
+    text-decoration: underline;
+}
+
+.xmin-recent-actions .action.x-item-over {
+    background-color: #ddd;
+}
+
+.xmin-recent-actions-list {
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.x-component.xmin-recent-actions.x-component-default {
+    background-color: white;
+}
+
+/* .xmin form widgets */
+.xmin-form-add-trigger {
+  background-image: url(../images/buttons/trigger-add.png) !important;
+}
+
+/* .xmin password change form */
+#xmin-old-password {
+  padding-top: 5px;
+}
+
+ /* подсказки для полей формы */
+.help_image {
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+/* поля формы, не доступные для редактирования */
+.x-form-item-default.x-item-disabled .x-form-text-wrap.x-form-text-wrap-default {
+  opacity: 0.4;
+}
+
+.x-form-item-default.x-item-disabled {
+  opacity: 1;
+}
+
+ /* кнопка добавления "плюс" */
+.plus-button-pale {
+  opacity: 0.2 !important;
+}
+
+.x-grid-cell-error {
+    outline: 1px solid #cf4c35;
+}
+
+.x-form-text-wrap {
+    display: block;
+}
+
+.x-webkit .x-form-text {
+  float: left;
+}
+
+.x-form-textarea {
+    min-height: 100px !important;
+}

@@ -1,0 +1,218 @@
+[
+{
+  "fields": {
+    "name": "Индивидуальный предприниматель",
+    "short_name": "ИП"
+  },
+  "model": "dict.legalform",
+  "pk": 1
+},
+{
+  "fields": {
+    "name": "Общество с ограниченной ответственностью",
+    "short_name": "ООО"
+  },
+  "model": "dict.legalform",
+  "pk": 2
+},
+{
+  "fields": {
+    "name": "Общество с дополнительной ответственностью",
+    "short_name": "ОДП"
+  },
+  "model": "dict.legalform",
+  "pk": 3
+},
+{
+  "fields": {
+    "name": "Открытое акционерное общество",
+    "short_name": "ОАО"
+  },
+  "model": "dict.legalform",
+  "pk": 4
+},
+{
+  "fields": {
+    "name": "Закрытое акционерное общество",
+    "short_name": "ЗАО"
+  },
+  "model": "dict.legalform",
+  "pk": 5
+},
+{
+  "fields": {
+    "name": "Полное товарищество",
+    "short_name": "ПТ"
+  },
+  "model": "dict.legalform",
+  "pk": 6
+},
+{
+  "fields": {
+    "name": "Товарищество на вере",
+    "short_name": "ТВ"
+  },
+  "model": "dict.legalform",
+  "pk": 7
+},
+{
+  "fields": {
+    "name": "Производственный кооператив",
+    "short_name": "ПК"
+  },
+  "model": "dict.legalform",
+  "pk": 8
+},
+{
+  "fields": {
+    "name": "Унитарное предприятие",
+    "short_name": "УП"
+  },
+  "model": "dict.legalform",
+  "pk": 9
+},
+{
+  "fields": {
+    "name": "Потребительский кооператив",
+    "short_name": "ПК"
+  },
+  "model": "dict.legalform",
+  "pk": 10
+},
+{
+  "fields": {
+    "name": "Общественная или религиозная организация (объединение)",
+    "short_name": "ОиРО"
+  },
+  "model": "dict.legalform",
+  "pk": 11
+},
+{
+  "fields": {
+    "name": "Частное учреждение",
+    "short_name": "ЧУ"
+  },
+  "model": "dict.legalform",
+  "pk": 12
+},
+{
+  "fields": {
+    "name": "Бюджетное учреждение",
+    "short_name": "БУ"
+  },
+  "model": "dict.legalform",
+  "pk": 13
+},
+{
+  "fields": {
+    "name": "Автономное учреждение",
+    "short_name": "АУ"
+  },
+  "model": "dict.legalform",
+  "pk": 14
+},
+{
+  "fields": {
+    "name": "Государственная корпорация",
+    "short_name": "ГК"
+  },
+  "model": "dict.legalform",
+  "pk": 15
+},
+{
+  "fields": {
+    "name": "Орган общественной самодеятельности",
+    "short_name": "ООС"
+  },
+  "model": "dict.legalform",
+  "pk": 16
+},
+{
+  "fields": {
+    "name": "Автономная некоммерческая организация",
+    "short_name": "АНО"
+  },
+  "model": "dict.legalform",
+  "pk": 17
+},
+{
+  "fields": {
+    "name": "Объединение юридических лиц (ассоциация или союз)",
+    "short_name": "ОЮЛ"
+  },
+  "model": "dict.legalform",
+  "pk": 18
+},
+{
+  "fields": {
+    "name": "Объединение крестьянских (фермерских) хозяйств",
+    "short_name": "ОКХ"
+  },
+  "model": "dict.legalform",
+  "pk": 19
+},
+{
+  "fields": {
+    "name": "Территориальное общественное самоуправление",
+    "short_name": "ТОС"
+  },
+  "model": "dict.legalform",
+  "pk": 20
+},
+{
+  "fields": {
+    "name": "Товарищество собственников жилья",
+    "short_name": "ТСЖ"
+  },
+  "model": "dict.legalform",
+  "pk": 21
+},
+{
+  "fields": {
+    "name": "Садоводческое, огородническое или дачное некоммерческое товарищество",
+    "short_name": "ДНТ"
+  },
+  "model": "dict.legalform",
+  "pk": 22
+},
+{
+  "fields": {
+    "name": "Некоммерческая организация",
+    "short_name": "НО"
+  },
+  "model": "dict.legalform",
+  "pk": 23
+},
+{
+  "fields": {
+    "name": "Паевой инвестиционный фонд",
+    "short_name": "ПИФ"
+  },
+  "model": "dict.legalform",
+  "pk": 24
+},
+{
+  "fields": {
+    "name": "Простое товарищество",
+    "short_name": "ПТ"
+  },
+  "model": "dict.legalform",
+  "pk": 25
+},
+{
+  "fields": {
+    "name": "Представительство или филиал",
+    "short_name": "ПиФ"
+  },
+  "model": "dict.legalform",
+  "pk": 26
+},
+{
+  "fields": {
+    "name": "Крестьянское (фермерское) хозяйство",
+    "short_name": "КХ"
+  },
+  "model": "dict.legalform",
+  "pk": 27
+}
+]

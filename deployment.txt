@@ -1,0 +1,99 @@
+Развертывание сервера приложений
+
+Настройка виртуального окружения
+
+файл для сборки виртуального окружения — build_env.sh:
+---
+#!/bin/bash
+echo $0: Creating virtual environment
+virtualenv --prompt="<prod-env>" ./env
+mkdir ./logs
+mkdir ./pids
+mkdir ./db
+mkdir ./static
+mkdir ./static/media
+echo $0: Installing dependencies
+source ./env/bin/activate
+export PIP_REQUIRE_VIRTUALENV=true
+./env/bin/pip3 install --requirement=requirements/defaults.txt --log=./logs/build_pip_packages.log
+echo $0: Making virtual environment relocatable
+virtualenv --relocatable ./env
+echo $0: Creating virtual environment finished.
+---
+ 
+и файл 'requirements/defaults.txt', который содержит пакеты, необходимые для работы системы 1НПФ:
+
+---
+psycopg2
+lxml
+rarfile
+unrar
+dbfread
+six
+south>=1.0
+openpyxl
+pytz
+cssselect
+suds-jurko>=0.6
+python-docx
+python-dateutil
+django==1.8.3
+django-mptt>=0.7.4
+# django_select2
+# https://github.com/applegrew/django-select2/archive/master.zip
+django_select2==4.3.2
+# django-fias
+https://github.com/Yuego/django-fias/archive/master.zip
+django-concurrency
+# Django extensions http://django-extensions.readthedocs.org/en/latest/
+django-extensions>=1.5.5
+django-viewflow
+django-viewform
+#msoro
+django-grappelli
+gunicorn
+---
+
+Создаем рабочую директорию проекта:
+
+k2-admin@k2:/$ mkdir /srv/web/production
+k2-admin@k2:/$ cd /srv/web/production
+
+Установка ВО и файлов проекта
+
+Устанавливается виртуальное окружение для работы нашего сервера: 
+k2-admin@k2:/srv/web/production$ ./build_env.sh
+
+Копируем папки проекта из репозитория или бэкапа
+
+Создаем БД (или восстанавливаем из дампа)
+k2-admin@k2:/srv/web/production$ sudo su - postgres
+postgres@k2:/srv/web/production$ psql
+postgres=# CREATE DATABASE npf;
+CREATE DATABASE
+postgres=# CREATE USER fpf WITH PASSWORD 'f2reng18';
+CREATE ROLE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE npf TO fpf;
+GRANT
+postgres=# \q
+postgres@k2:/srv/web/production$ exit
+k2-admin@k2:/srv/web/production$ sudo -u postgres psql npfdev < /srv/ttt/fias.sql
+
+Переходим к миграции и запуску самого проекта в рамках virtual environment
+k2-admin@k2:/srv/web/production$ source env/bin/activate
+<prod-env>k2-admin@k2:/srv/web/production$ python manage.py makemigrations
+<prod-env>k2-admin@k2:/srv/web/production$ python manage.py migrate fias --fake
+<prod-env>k2-admin@k2:/srv/web/production$ python manage.py migrate
+<prod-env>k2-admin@k2:/srv/web/production$ python manage.py createsuperuser
+(admin:12345)
+
+Запуск и работа
+
+Запуск сервера приложения:
+<prod-env>k2-admin@k2:/srv/web/production$ python manage.py runserver 0.0.0.0:8001
+
+Остановка:
+Ctrl+C
+
+Деактивация виртуального окружения:
+deactivate

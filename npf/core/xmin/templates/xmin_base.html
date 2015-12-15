@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>{% block title %}Django xmin{% endblock %}</title>
+
+    {% block meta %}{% endblock %}
+    {% block styles %}{% endblock %}
+
+<!--
+    <script type="text/javascript" src="/static/workflow/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/send_start_form_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/send_creation_form_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/send_task_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/parse_url.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/collect_form_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/send_completion_form_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/parse_url_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/refresh_workflow.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/send_approve_data.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/extract_get_params.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/make_start_process_buttons.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/extract_process_name.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/extract_model_name.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/extract_object_id.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/processes/close_ips/input_acc_number_close_ips.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/processes/close_ips/send_input_acc_number_close_ips.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/processes/close_ips/close_acc_close_ips.js"></script>
+    <script type="text/javascript" src="/static/workflow/js/processes/close_ips/send_close_acc_close_ips.js"></script>
+-->
+
+    <link rel="stylesheet" type="text/css" href="{% static "django_select2/css/extra.css" %}" />
+
+    {% if DEBUG %}
+        <link rel="stylesheet" type="text/css" href="{% static "django_select2/css/select2.css" %}" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+
+        <!--
+        <script type="text/javascript" src="/static/workflow/js/jquery-ui.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="{% static "django_select2/js/select2.js" %}"></script>
+        <script type="text/javascript" src="{% static "django_select2/js/heavy_data.js" %}"></script>
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="{% static "django_select2/css/select2.min.css" %}" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+        <!--
+        <script type="text/javascript" src="/static/workflow/js/jquery-ui.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="{% static "django_select2/js/select2.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "django_select2/js/heavy_data.min.js" %}"></script>
+    {% endif %}
+
+    <script type="text/javascript" src="{% static "fias/js/fias.js" %}"></script>
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>

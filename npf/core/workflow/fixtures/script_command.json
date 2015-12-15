@@ -1,0 +1,11 @@
+[
+{
+  "pk": 1,
+  "model": "workflow.scriptcommand",
+  "fields": {
+    "name": "Логирование в файл",
+    "description": "Тестовая команда. Делает запись в лог файл.",
+    "command": "commandlog"
+  }
+}
+]

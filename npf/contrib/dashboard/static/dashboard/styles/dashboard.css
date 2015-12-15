@@ -1,0 +1,77 @@
+#app-header {
+    background-color: #2a3f5d;
+    border-bottom: 1px solid #121b28;
+}
+
+#app-header-title {
+    padding: 15px 0 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#app-header-logo {
+    width: 40px;
+    height: 25px;
+    background: url(../images/logo.png) no-repeat center 4px;
+}
+
+#app-header a, #app-header .x-toolbar-text {
+    color: #fff;
+}
+
+#app-dashboard-bookmarks {
+    background-image: url(../images/square.gif);
+}
+
+#app-header-options-btn {
+    background-image: url(../images/options.png);
+    width: 22px;
+    height: 22px;
+}
+
+/* xmin my tasks */
+.x-my-tasks {
+    font-size: 11px;
+    list-style: none outside none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.x-my-tasks .task {
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #FFFFFF;
+    color: #444;
+    clear: both;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+
+}
+
+.x-my-tasks .high_priority {
+    background-image: url(../images/high.png);
+}
+
+.x-my-tasks .medium_priority {
+    background-image: url(../images/medium.png);
+}
+
+.x-my-tasks .low_priority {
+    background-image: url(../images/low.png);
+}
+
+.x-my-tasks .task.x-item-over {
+    background-color: #ddd;
+}
+
+.x-my-tasks-no {
+    padding-top: 5px;
+    padding-left: 25px;
+}

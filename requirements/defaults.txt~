@@ -1,0 +1,31 @@
+psycopg2
+lxml
+rarfile
+unrar
+dbfread
+six
+south>=1.0
+openpyxl
+pytz
+cssselect
+suds-jurko>=0.6
+
+python-docx
+python-dateutil
+
+django==1.8.3
+django-mptt>=0.7.4
+
+# django_select2
+https://github.com/applegrew/django-select2/archive/master.zip
+
+# django-fias
+https://github.com/Yuego/django-fias/archive/master.zip
+
+django-concurrency
+
+# Django extensions http://django-extensions.readthedocs.org/en/latest/
+django-extensions>=1.5.5
+
+django-viewflow
+django-viewform
